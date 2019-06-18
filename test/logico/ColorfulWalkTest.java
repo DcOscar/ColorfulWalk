@@ -24,6 +24,7 @@ public class ColorfulWalkTest {
         int[] coloresCasas = new int[]{1, 2, 3, 2, 3};
         int cantidadAMover = ColorfulWalk.cantidadCasasARecorrer(cantidadCasas, coloresCasas);
         assertEquals(4, cantidadAMover);
+        System.out.println(cantidadAMover);    
     }
 
     @Test
@@ -32,6 +33,7 @@ public class ColorfulWalkTest {
         int[] coloresCasas = new int[]{1, 2, 1};
         int cantidadAMover = ColorfulWalk.cantidadCasasARecorrer(cantidadCasas, coloresCasas);
         assertEquals(1, cantidadAMover);
+        System.out.println(cantidadAMover);    
     }
 
     @Test
@@ -40,6 +42,7 @@ public class ColorfulWalkTest {
         int[] coloresCasas = new int[]{1, 1, 3, 1, 1, 1, 1};
         int cantidadAMover = ColorfulWalk.cantidadCasasARecorrer(cantidadCasas, coloresCasas);
         assertEquals(4, cantidadAMover);
+        System.out.println(cantidadAMover);    
     }
 
 }
