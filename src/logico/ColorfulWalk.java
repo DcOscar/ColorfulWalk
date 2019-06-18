@@ -21,32 +21,11 @@ public class ColorfulWalk {
             coloresCasas[i] = teclado.nextInt();
 
         }
-        int cantidadAMover = cantidadCasasARecorrer2(cantidadCasas, coloresCasas);
+        int cantidadAMover = cantidadCasasARecorrer(cantidadCasas, coloresCasas);
         System.out.println(cantidadAMover);
     }
 
     public static int cantidadCasasARecorrer(int cantidadCasas, int[] coloresCasas) {
-        int opcion1 = cantidadCasas - 1;
-        while (opcion1 >= 0) {
-            if (coloresCasas[0] != coloresCasas[opcion1]) {
-                break;
-            }
-            opcion1--;
-        }
-        int opcion2 = 0;
-        while (opcion2 < cantidadCasas) {
-            if (coloresCasas[opcion2] != coloresCasas[cantidadCasas - 1]) {
-                opcion2 = (cantidadCasas - 1) - opcion2;
-                break;
-            }
-            opcion2++;
-        }
-        int cantidadAMover = Math.max(opcion1, opcion2);
-        return cantidadAMover;
-
-    }
-
-    public static int cantidadCasasARecorrer2(int cantidadCasas, int[] coloresCasas) {
         int opcion1 = 0;
         int opcion2 = 0;
         int contadorOpcion1 = 0;
